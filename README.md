@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+<!-- 
 ## Theme Monos
 > Simple and lightweight theme for Jekyll
 
@@ -30,8 +30,11 @@ date_format: "%Y-%M-%D" //and date format.
 #### Page - Mobile
 ![alt text](/public/img/screenshot-m1.png)
 #### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
+![alt text](/public/img/screenshot-m2.png) -->
 
+### Jekyll 프로젝트 로컬 실행 방법
+1. 터미널에서 'bundle exec jekyll serve' 명령어 실행
+2. http://localhost:4000 웹 페이지로 이동
 
 ### 블로그를 노출시키고 싶을 때는 어떻게? 
 - 구글에 노출 (추후 아래 링크 참고)

@@ -1,11 +1,19 @@
 ---
 layout: post
-title: Binary Log를 이용하여 파이썬에서 Azure Database for MySQL 데이터 변경 정보를 가져오기 (1)
-date: 2024-04-27 21:56:23 +0900
+title: Binary Log를 이용하여 파이썬에서 Azure Database for MySQL 데이터 변경 정보를 가져오기 (2)
+date: 2024-05-01 11:3:23 +0900
 category: sample
 ---
 
 이번 포스팅의 목적은 Azure Database for MySQL 서버에서의 CRUD작업에 대해 데이터를 캡처해 Microsoft Fabric의 Warehouse에 변경사항을 적용할 수 있는지에 대한 테스트입니다.
+
+이전 과정에서 Azure Database for MySQL 설치를 완료하였다면, DBeaver를 통해 해당 Database에 접근하여 테이블 생성 및 DML 작업을 수행합니다.
+(실시간 CDC 뿐만 아니라 과거 시점의 Data 변경 내역까지 조회하기 위함.)
+
+# 2. 테이블 생성
+
+1. DBeaver 설치 링크로 이동합니다.
+[DBeaver 설치 링크](http://hava.github.io/sample/2024/05/01/create_table_and_CRUD.html).
 
 # 1. Azure Database for MySQL 설치하기
 테스트를 위해 Azure Database For MySQL 서버를 설치합니다.
@@ -54,5 +62,7 @@ category: sample
 
 테스트를 위한 MySQL 서버 생성을 완료하였습니다. 이미 테스트를 위한 MySQL 환경이 구성되어 있는 상태라면, 위의 과정을 생략해도 좋습니다.
 다음은, 생성한 MySQL Server에 DBeaver를 사용해 접근하여 데이터베이스에 테이블을 생성하고 Insert, Update, Delete 등의 CRUD 작업을 수행하는 방법을 알아보겠습니다.
+# 2. 테이블 생성
 
-[Binary Log를 이용하여 파이썬에서 Azure Database for MySQL 데이터 변경 정보를 가져오기 (2)](http://hava.github.io/sample/2024/05/01/create_table_and_CRUD.html).
+# 3. Fabric Notebook에 파이썬 코드 작성
+
